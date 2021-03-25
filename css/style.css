@@ -1,0 +1,115 @@
+body {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+}
+img {
+    max-width: 80%;
+    object-fit: cover;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+  grid-template-rows: 0.6fr 0.9fr 1fr 2.5fr 0.2fr;
+  gap: 2px 2px;
+  grid-template-areas:
+    "Nav-bar Nav-bar Nav-bar Nav-bar Nav-bar Nav-bar Nav-bar"
+    "Main-header Main-header . . . . Side-content"
+    "Sub-text Sub-text Sub-text Sub-text Sub-text Sub-text Side-content"
+    "Article1 Article1 Article1 Article2 Article2 Article2 Side-content"
+    "Footer Footer Footer Footer Footer Footer Footer";
+}
+
+.Nav-bar {
+  grid-area: Nav-bar;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(230, 223, 223);
+  padding: 20px;
+}
+
+.navbar-link li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.grid-container > div {
+  border: black solid 2px;
+  text-align: center;
+  image-rendering: auto;
+  
+}
+.grid-container > div > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.Article1 {
+  grid-area: Article1;
+}
+
+.Article2 {
+  grid-area: Article2;
+}
+
+.Side-content {
+  grid-area: Side-content;
+}
+
+.Main-header {
+  grid-area: Main-header;
+}
+
+.Footer {
+  grid-area: Footer;
+}
+
+.Sub-text {
+  grid-area: Sub-text;
+}
+
+
+/*
+
+CSS for login page
+
+*/
+
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr 0.5fr 1.2fr 0.8fr;
+    grid-template-rows: 0.6fr 0.5fr 1.3fr 0.4fr 0.3fr;
+    gap: 2px 2px;
+    grid-template-areas:
+      "Navbar1 Navbar1 Navbar1 Navbar1 Navbar1"
+      ". Header1 . . ."
+      ". Form1 Form1 Form1 ."
+      ". . . . ."
+      "Footer1 Footer1 Footer1 Footer1 Footer1";
+  }
+
+  .grid-container1 > div {
+    border: black solid 2px;
+    text-align: center;
+    image-rendering: auto;
+    
+  }
+  
+  .Navbar1 li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+
+  .Header1 { grid-area: Header1; }
+  
+  .Navbar1 { grid-area: Navbar1; }
+  
+  .Form1 { grid-area: Form1; }
+  
+  .Footer1 { grid-area: Footer1; }
+  
+  
